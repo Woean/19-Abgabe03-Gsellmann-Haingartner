@@ -4,6 +4,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.NoSuchElementException;
+
 import static org.junit.Assert.*;
 
 public class StringStackTest
@@ -76,6 +78,14 @@ public class StringStackTest
         s.push("");
         s.push("");
         assertFalse(s.isEmpty());
+    }
+
+    /*
+    tests if the right exception comes if you try to pop on an empty stack
+     */
+    @Test(expected=java.lang.IllegalStateException.class)
+    public void testElement() throws Exception{
+        s.pop();
     }
 
 
