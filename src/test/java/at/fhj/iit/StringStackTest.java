@@ -84,7 +84,7 @@ public class StringStackTest
     tests if the right exception comes if you try to pop on an empty stack
      */
     @Test(expected=java.lang.IllegalStateException.class)
-    public void testElement() throws Exception{
+    public void testPopOnEmptyStack() throws Exception{
         s.pop();
     }
 
