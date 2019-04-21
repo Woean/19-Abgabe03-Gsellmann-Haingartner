@@ -1,4 +1,4 @@
-package at.fhj.iit;
+package at.fhj.msd;
 
 /**
  * Stack Implementation of <code>Stack</code> Interface.
