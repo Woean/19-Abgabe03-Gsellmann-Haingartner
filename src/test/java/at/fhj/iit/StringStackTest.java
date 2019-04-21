@@ -71,7 +71,12 @@ public class StringStackTest
     /**
      * Feel Free to insert other test cases for the String Stack Implementation !!!
      */
-
+    @Test
+    public void testEmptyPush() throws Exception {
+        s.push("");
+        s.push("");
+        assertFalse(s.isEmpty());
+    }
 
 
 }
