@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.*;
 
 public class StringStackTest
 {
@@ -55,6 +55,17 @@ public class StringStackTest
     @Test
     public void testPushPop() throws Exception
     {
+        s.push("This");
+        s.push("is");
+        s.push("the");
+        s.push("top");
+
+        assertEquals("top", s.pop());
+        assertEquals("the", s.pop());
+        assertEquals("is", s.pop());
+        assertEquals("This", s.pop());
+
+        assertTrue(s.isEmpty());
     }
     
     /**
