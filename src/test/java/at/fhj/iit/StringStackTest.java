@@ -4,6 +4,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertFalse;
+
 public class StringStackTest
 {
     public Stack s;
@@ -35,7 +37,8 @@ public class StringStackTest
     @Test
     public void testIsNotEmpty() throws Exception
     {
-        
+        s.push("Joda");
+        assertFalse(s.isEmpty());
     }
 
     /**
